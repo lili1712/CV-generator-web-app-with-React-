@@ -1,0 +1,44 @@
+.navigation{
+    margin-left: 550px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.prev-button{
+    margin-right: 20px;
+    width: 90px;
+    height: 50px;
+    
+    border: 1px solid black;
+    color : black;
+    font-size: 1.8rem;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    left:500px;
+}
+
+.next-button{
+    margin-left: 20px;
+    width: 90px;
+    height: 50px;
+    
+    border: 1px solid black;
+    color : black;
+    font-size: 1.8rem;
+    background-color: white;
+    position: fixed;
+    bottom: 50px;
+    left:750px;
+}
+
+.navigation button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.card-title {
+    color: black;
+}
