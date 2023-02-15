@@ -1,0 +1,205 @@
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+--body-bg-color : white;
+--sidebar-bg-color: #69909f ;
+--text-color: black;
+--title-color:#fdfdfd ;
+--date-color: #69909f;
+
+
+--icon-color :#000000 ;
+--circle-color :#3686a3 ;
+--circle-color-plain : #3686a3 ;
+
+--body-fonts: Garamond, serif;
+--h1-font-size: 35px;
+--h2-font-size: 20px;
+
+--spacing-1 : .4rem;
+--spacing-2 : .8rem;
+--spacing-3 : 1.2rem;
+--spacing-4 : 1.5rem;
+--spacing-5 : 2rem;
+
+}
+
+.App{
+  background-color: var(--body-bg-color);
+}
+
+body {
+  font-family : var(--body-fonts);
+  font-weight : 200;
+  color : var(--text-color);
+  background-color: var(--body-bg-color);
+}
+
+h1, h2, h3 {
+  margin-bottom: var(--spacing-2); 
+  font-weight: 400;
+  color: var(--title-color);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  display:flex;
+  align-items: center;
+  margin-bottom: var(--spacing-4);
+  margin-top: var(--spacing-4);
+  font-size: var(--h2-font-size);
+  letter-spacing: 4px;
+}
+
+@media screen and (min-width:768px) {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid_row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0;
+}
+}
+
+.sideBar {
+  padding: 1.5rem;
+  background-color: var(--sidebar-bg-color);
+}
+
+.main {
+  padding: 1.5rem;
+}
+
+p {
+  margin-bottom: var(--spacing-2);
+}
+
+footer
+{ 
+	background-color: black;
+	color : white;
+  height: 50px;
+	text-align: center;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+
+.footer {
+  padding-top: 13px;
+  
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.image_div {
+  text-align: center;
+}
+
+.user_name {
+  text-align: center;
+}
+
+.profession {
+  text-align: center;
+}
+
+.infoPerso {
+  padding: var(--spacing-3) 0 var(--spacing-1) 0;
+}
+
+.infos {
+  display: flex;
+}
+
+.infos svg {
+  color : var(--icon-color);
+  margin-right: 1rem;
+}
+
+.others {
+  margin: var(--spacing-3) 0;
+}
+
+.other {
+  display: flex;
+}
+
+.other_title {
+  display: flex;
+}
+
+.other_title svg {
+  color : var(--icon-color);
+  margin-right: 1rem;
+}
+
+.grid_item, .grid_item p {
+  margin-bottom: var(--spacing-1);
+}
+
+.grid_date {
+  font-weight: 450;
+}
+
+.grid_title {
+  margin-bottom: 0;
+  color: black;
+}
+
+.grid_location {
+  font-weight: 300;
+  color: var(--date-color);
+}
+
+.formationsDiplomes {
+  color : var(--sidebar-bg-color);
+}
+
+.Etudes {
+  margin-bottom: var(--spacing-3);
+}
+
+.experiences {
+  color : var(--sidebar-bg-color);
+}
+
+.Exp {
+  margin-bottom: var(--spacing-3);
+}
+
+.competences {
+  margin: var(--spacing-3) 0;
+}
+
+.competence {
+  display: flex;
+}
+
+.competence_title {
+  display: flex;
+}
+
+.competence_title svg {
+  color : var(--icon-color);
+  margin-right: 1rem;
+}
+
+.Competences_title {
+  color : var(--sidebar-bg-color)
+}
